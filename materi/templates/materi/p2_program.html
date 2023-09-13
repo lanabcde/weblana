@@ -1,0 +1,270 @@
+
+{% extends "baseMateri.html"%}
+
+{% load static %}
+
+{% block judul %}
+  <title>Program</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock judul %}
+
+{% block konten %}
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <span>Program dan Pemrograman</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="{% url 'materi'%}">
+            <i class="bi bi-circle"></i><span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'program'%}" class="active">
+            <i class="bi bi-circle"></i><span>Pemorgraman</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'bahasa_pemrograman'%}">
+            <i class="bi bi-circle"></i><span>Bahasa Pemrograman</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'interpreter_compiler'%}">
+              <i class="bi bi-circle"></i><span>Compiler dan Interpreter</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'bahasa_python' %}">
+              <i class="bi bi-circle"></i><span>Bahasa Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'program_sederhana' %}">
+              <i class="bi bi-circle"></i><span>Program Sederhana dengan Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab1' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 1</span>
+            </a>
+          </li>
+        </ul>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+         <span>Tipe Data, variabel, Operator</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'beranda2' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'tipe_data'%}">
+              <i class="bi bi-circle"></i><span>Tipe Data</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'variabel'%}">
+              <i class="bi bi-circle"></i><span>Varaibel</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'operator'%}">
+              <i class="bi bi-circle"></i><span>Operator</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab2'%}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 2</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Percabangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda3' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'percabangan' %}">
+              <i class="bi bi-circle"></i><span>Pengenalan Struktur Percabangan</span>
+            </a>
+          </li>
+        <li>
+          <a href="{% url 'percabangan_if'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_if_else'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If...Else</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_elif' %}">
+            <i class="bi bi-circle"></i><span>Percabangan Elif</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'kuis_bab3' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 3</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Tables Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Perulangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda4' %}">
+              <i class="bi bi-circle"></i><span>Beranda </span>
+            </a>
+        </li>
+         <li>
+            <a href="{% url 'perulangan' %}">
+            <i class="bi bi-circle"></i><span>Pengenalan Struktur Perulangan</span>
+            </a>
+              </li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan While</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan For</span>
+          </a>
+        </li>
+        <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>Kuis BAB 4</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Charts Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+           <span>Fungsi</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Pengertian</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-remix.html">
+            <i class="bi bi-circle"></i><span>Fungsi Dengan Nilai Balik</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-boxicons.html">
+            <i class="bi bi-circle"></i><span>Fungsi Tanpa Nilai Balik</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Icons Nav -->   
+</aside><!-- End Sidebar-->  
+</aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-20">
+          <div class="row">        
+
+            <!-- Recent Sales -->
+            <div class="col-25">
+              <div class="card recent-sales overflow-auto">              
+
+                <div class="card-body">
+                  <h3 class="card-title" align="center"></span>BABA I : Program   </h3>
+                  <h6>Tujuan Pembelajaran</h6>
+                  <ul>
+                    <li>Tujuan 1</li>
+                    <li>Tujuan 2 </li>
+                  </ul>
+
+                  
+                  <p>Algoritma akan efektif jika dijalankan oleh pemroses (processor). Pemroses bisa berupa manusia, komputer, robot, mesin dan sebagainya.<br>
+                    Pemroses akan membaca setiap instruksi yang ada di algoritma lalu menjalankannya. Komputer sebagai pemroses algoritma akan menjalankan instruksi-instruksi yang diberikan.
+                     agar komputer memahami instruksi-instruksi yang diberikan maka harus ditulis dalam bahasa khusus yang dimengerti komputer.</p>
+                  <p> Instruksi-instruksi yang ditulis dalam bahasa komputer disebut dengan <strong>program</strong>. Bahasa komputer yang digunakan menulis program disebut <strong>bahasa pemrograman</strong>.
+                     orang yang membuat program disebut <strong> pemrogram atau programmer</strong>, dan kegiatan merancang dan menulis program disebut <strong>pemrograman</strong>. Program membuat komputer menajdi lebih berguna.
+                      Tanpa program , bahkan komputer yang paling canggih pun tidak ada gunannya. </p>
+                  <p>Walaupun komputer dapat menyelesaikan tugas yang rumit, kemampuan tersebut tidak melekat pada dirinya.
+                    Komputer hanya mampu melakukan operasi-operasi yang sangat dasar. Sebagai contoh, meskipun kemungkinannya tidak mustahil pada masa depan, namun saat ini, komputer belum dapat memahami nilai dari fungsi matematika yang kompleks secara mandiri.
+                    Komputer dapat mengeksekusi operasi-operasi dasar seperti penambahan dan pembagian dengan kecepatan yang sangat tinggi, dan mampu mengulanginya berulang kali hampir tanpa batas.
+                    Contohnya jika kita  ingin mengetahui kecepatan rata-rata yang telah kita  capai selama perjalanan panjang. Dengan mengetahui jarak yang telah ditempuh dan waktu yang diperlukan, 
+                    kita dapat menghitung nilai kecepatannya. Secara alami, komputer akan mampu menghitungnya, tetapi komputer tidak menyadari hal-hal seperti jarak, kecepatan, atau waktu. Oleh karena itu, diperlukan instruksi untuk memberitahu komputer: </p>
+                  <ol>
+                    <li>Menerima nilai jarak yang ditempuh</li>
+                    <li>Menerima nilai waktu perjalanan</li>
+                    <li>Membagi nilai jarak dan nilai waktu dan menyimpan hasilnya di dalam memori</li>
+                    <li>Menampilkan nilai rata-rata kecepatan yang ditempuh dari oprasi pemabgian jarak dibagi waktu</li>
+                  </ol>
+                  <p>Empat langkah diatas adalah contoh sederhana dari sebuah program. Keempat langkah tersebut masih jauh dari apa yang dimengerti komputer,
+                     tetapi contoh tersebut cukup baik untuk diterjemahkan kedalam bahasa yang bisa diterima komputer. Kuncinya adalah bahasa.</p>
+
+                     <div class="card" style="width: 27rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Latihan1.1</h5>
+                        <ol>
+                          <li><p class="card-text">Kegiatan merancang algoritma dan  menuliskan program-program kedalam kode program disebut?</p>
+                              <input type="text"></input><br><br>
+                          </li>
+                          </li>
+                          <li><p class="card-text">Bahasa yang dimenegrti manusia dan komputer dan digunakan untuk berkomunikasi dengan komputer disebut?</p>
+                            <input type="text"></input><br>
+                          </li>
+                        </ol>
+                        <a href="#" class="btn btn-primary">Cek Jawaban</a>
+                      </div>
+                    </div>
+
+                     <a href="{% url 'materi' %}"> <button type="button" class="btn btn-secondary">Sebelumnya</button></a>
+                     <a href="{% url 'bahasa_pemrograman' %}"><button class="btn btn-primary">Selanjutnya</button></a>
+
+
+                 
+
+                </div>
+
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+{% endblock konten %}
+

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>MASUK</title>
+    </head>
+    <body>
+        <h1>PYDU</h1>
+        <ul>
+        {% for link,name in nav %}        
+                 <li><a href= "{{link}}" {% if link in request.path%} class="active" {% endif %}>{{name}}</a></li>
+              {% endfor %}
+        </ul>
+        <p>MASUK</p>
+
+
+    </body>
+</html>

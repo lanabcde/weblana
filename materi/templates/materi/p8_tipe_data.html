@@ -1,0 +1,267 @@
+
+{% extends "baseMateri.html"%}
+
+{% load static %}
+
+{% block judul %}
+  <title>BAB 2 : Tipe Data,Variabel dan Operator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock judul %}
+
+{% block konten %}
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <span>Program dan Pemrograman</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="{% url 'materi'%}">
+            <i class="bi bi-circle"></i><span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'program'%}">
+            <i class="bi bi-circle"></i><span>Pemorgraman</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'bahasa_pemrograman'%}">
+            <i class="bi bi-circle"></i><span>Bahasa Pemrograman</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'interpreter_compiler'%}">
+              <i class="bi bi-circle"></i><span>Compiler dan Interpreter</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'bahasa_python' %}">
+              <i class="bi bi-circle"></i><span>Bahasa Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'program_sederhana' %}">
+              <i class="bi bi-circle"></i><span>Program Sederhana dengan Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab1' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 1</span>
+            </a>
+          </li>
+        </ul>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+         <span>Tipe Data, variabel, Operator</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'beranda2' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'tipe_data'%}" class="active">
+              <i class="bi bi-circle"></i><span>Tipe Data</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'variabel'%}">
+              <i class="bi bi-circle"></i><span>Varaibel</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'operator'%}">
+              <i class="bi bi-circle"></i><span>Operator</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab1'%}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 2</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Percabangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda3' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'percabangan' %}">
+              <i class="bi bi-circle"></i><span>Pengenalan Struktur Percabangan</span>
+            </a>
+          </li>
+        <li>
+          <a href="tables-general.html">
+            <i class="bi bi-circle"></i><span>Percabangan If</span>
+          </a>
+        </li>
+        <li>
+          <a href="tables-data.html">
+            <i class="bi bi-circle"></i><span>Percabangan If...Else</span>
+          </a>
+        </li>
+        <li>
+          <a href="tables-data.html">
+            <i class="bi bi-circle"></i><span>Percabangan Elif</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'kuis_bab3' %}">
+            <i class="bi bi-circle"></i><span>kuis_bab3</span>
+          </a>
+        </li>
+        <li>
+      </ul>
+    </li><!-- End Tables Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Perulangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda4' %}">
+              <i class="bi bi-circle"></i><span>Beranda </span>
+            </a>
+        </li>
+         <li>
+            <a href="{% url 'perulangan' %}">
+            <i class="bi bi-circle"></i><span>Pengenalan Struktur Perulangan</span>
+            </a>
+              </li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan While</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan For</span>
+          </a>
+        </li>
+        <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>Kuis BAB 4</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Charts Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+           <span>Fungsi</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Pengertian</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-remix.html">
+            <i class="bi bi-circle"></i><span>Fungsi Dengan Nilai Balik</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-boxicons.html">
+            <i class="bi bi-circle"></i><span>Fungsi Tanpa Nilai Balik</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Icons Nav -->   
+</aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-20">
+          <div class="row">        
+
+            <!-- Recent Sales -->
+            <div class="col-25">
+              <div class="card recent-sales overflow-auto">              
+
+                <div class="card-body">
+                  <h3 class="card-title" align="center"></span>Tipe Data</h3>
+                  <p>Dalam bahas pemrograman tipe data adalah jenis-jenis data yang akan di olah oleh komputer. Dalam bahasa python ada dua jenis tipe data yaitu tipe data primitive dan tipe data user defined.
+                    Tipe data primitive adaah tipe data yang sudah disediakan secara default oleh Python. Tipe data primitif  yang ada di python adalah  str, int, float, bool, dll.
+                 </p>
+                 <ul>
+                    <li>String</li>
+                        <p>String adalah tipe data yang hanya  digunakan untuk memproses text. Di dalam Python, String merupakan tipe data yang digunakan untuk merepresentasikan teks atau urutan karakter. 
+                            String dapat berisi satu atau lebih karakter, dan dapat terdiri dari huruf, angka, tanda baca, dan simbol lainnya. String dapat dibuat dengan dua cara: menggunakan tanda kutip tunggal (' ') atau tanda kutip ganda (" ").
+                            Contoh penggunaan tipe data string : </p>
+                            <code>
+                                'lana'<br>
+                                "Muhammad Maulana"<br>
+                            </code><br>
+                    <li>Integer</li>
+                        <p>Tipe data integer adalah tipe data yang digunakan untuk memproses bilangan bulat. Tipe data integer dapat menampung bilangan bulat positif, nol,  bilanga bulat negative. Dalam Python, 
+                            integer digunakan untuk merepresentasikan bilangan bulat dan dapat melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, pembagian, modulus, dan pangkat. 
+                            Kita juga dapat mengkonversi integer ke tipe data lain, membulatkan bilangan, mengubah basis bilangan, menghitung panjang bilangan, dan membuat range bilangan untuk iterasi dalam loop.
+                            Berikut contoh tipe data integer : </p>
+                            <code>
+                                7<br>
+                                10<br>
+                                200<br>
+                                4000<br>
+                            </code><br>
+
+                     <li>Float</li>
+                        <p>Float adalah salah satu tipe data numerik dalam bahasa pemrograman Python yang digunakan untuk merepresentasikan bilangan real dengan titik desimal. Tipe data float dapat digunakan untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian.
+                           Berikut contoh penggunaan tipe data string :  </p>
+                            <code>
+                                3.14 <br>
+                                20.211 <br>
+                                172.3 <br>
+                            </code><br>
+
+                    <li>Boolean</li>
+                        <p>Tipe data Boolean dalam Python adalah tipe data yang hanya memiliki dua nilai: True dan False. Nilai True dan False digunakan untuk mengevaluasi kondisi atau ekspresi logika dalam program Python. Dalam bahasa pemrograman lain, tipe data ini sering disebut dengan tipe data boolean atau tipe data logika.
+                            Berikut ontoh penggunaan tipe data Boolean dalam Python adalah untuk menguji apakah suatu kondisi benar atau salah :</p>
+                                <code>
+                                    True <br>
+                                    False <br>
+                                </code><br>
+                    
+
+                  <a href="{% url 'beranda2' %}"><button class="btn btn-secondary"> Sebelumnya </button></a>
+                  <a href="{% url 'variabel' %}"><button class="btn btn-primary"> Selanjutnya </button></a>
+                 
+
+                </div>
+
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+{% endblock konten %}
+

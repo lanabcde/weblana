@@ -1,0 +1,258 @@
+
+{% extends "baseMateri.html"%}
+
+{% load static %}
+
+{% block judul %}
+  <title>Bahasa Pemrograman</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock judul %}
+
+{% block konten %}
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <span>Program dan Pemrograman</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="{% url 'materi'%}">
+            <i class="bi bi-circle"></i><span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'program'%}">
+            <i class="bi bi-circle"></i><span>Pemorgraman</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'bahasa_pemrograman'%}" class="active">
+            <i class="bi bi-circle"></i><span>Bahasa Pemrograman</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'interpreter_compiler'%}">
+              <i class="bi bi-circle"></i><span>Compiler dan Interpreter</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'bahasa_python' %}">
+              <i class="bi bi-circle"></i><span>Bahasa Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'program_sederhana' %}">
+              <i class="bi bi-circle"></i><span>Program Sederhana dengan Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab1' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 1</span>
+            </a>
+          </li>
+        </ul>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+         <span>Tipe Data, variabel, Operator</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'beranda2' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'tipe_data'%}">
+              <i class="bi bi-circle"></i><span>Tipe Data</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'variabel'%}">
+              <i class="bi bi-circle"></i><span>Varaibel</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'operator'%}">
+              <i class="bi bi-circle"></i><span>Operator</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab2'%}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 2</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Percabangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda3' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'percabangan' %}">
+              <i class="bi bi-circle"></i><span>Pengenalan Struktur Percabangan</span>
+            </a>
+          </li>
+        <li>
+          <a href="{% url 'percabangan_if'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_if_else'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If...Else</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_elif' %}">
+            <i class="bi bi-circle"></i><span>Percabangan Elif</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'kuis_bab3' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 3</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Tables Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Perulangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda4' %}">
+              <i class="bi bi-circle"></i><span>Beranda </span>
+            </a>
+        </li>
+         <li>
+            <a href="{% url 'perulangan' %}">
+            <i class="bi bi-circle"></i><span>Pengenalan Struktur Perulangan</span>
+            </a>
+              </li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan While</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan For</span>
+          </a>
+        </li>
+        <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>Kuis BAB 4</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Charts Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+           <span>Fungsi</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Pengertian</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-remix.html">
+            <i class="bi bi-circle"></i><span>Fungsi Dengan Nilai Balik</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-boxicons.html">
+            <i class="bi bi-circle"></i><span>Fungsi Tanpa Nilai Balik</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Icons Nav -->   
+</aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-20">
+          <div class="row">        
+
+            <!-- Recent Sales -->
+            <div class="col-25">
+              <div class="card recent-sales overflow-auto">              
+
+                <div class="card-body">
+                  <h3 class="card-title" align="center"></span>BABA I : Bahasa Pemrograman  </h3>
+                  <h6>Tujuan Pembelajaran</h6>
+                  <ul>
+                    <li>Tujuan 1</li>
+                    <li>Tujuan 2 </li>
+                  </ul>
+
+                  <p>
+                    Bahasa adalah sarana atau alat untuk mengekspresikan dan merekam pemikiran. Ada banyak bahasa di sekitar kita. Beberapa di antaranya tidak memerlukan berbicara atau menulis, seperti bahasa tubuh, kita  bisa mengungkapkan perasaan yang paling dalam dengan sangat tepat tanpa mengucapkan sepatah kata pun.
+Bahasa lain yang kita gunakan setiap hari adalah bahasa ibu kita, yang kita gunakan untuk menunjukkan kehendak dan mempertimbangkan realitas. Komputer memiliki bahasa mereka sendiri, disebut bahasa mesin, yang sangat primitif.</p>
+<p>Sebuah komputer, bahkan yang paling teknis, sama sekali tidak memiliki kecerdasan. Kita  bisa mengatakan bahwa itu seperti anjing yang terlatih dengan baik ,  ia hanya merespons pada seperangkat perintah yang telah ditentukan.
+Perintah yang diakui oleh komputer sangat sederhana. Kita bisa membayangkan bahwa komputer merespons pada perintah seperti "ambil angka itu, bagi dengan angka lain, dan simpan hasilnya".
+Sebuah set lengkap perintah yang dikenal disebut Instructional list disingkat IL.</p>
+<p> Jenis-jenis komputer yang berbeda mungkin berbeda tergantung pada ukuran IL mereka, dan instruksi-instruksi tersebut bisa benar-benar berbeda di model yang berbeda.
+Tidak ada komputer saat ini yang mampu menciptakan bahasa baru. Namun, hal itu mungkin akan berubah segera. Seperti halnya manusia menggunakan beberapa bahasa yang sangat berbeda, mesin juga memiliki banyak bahasa yang berbeda. Perbedaannya adalah bahasa manusia berkembang secara alami.
+Selain itu, bahasa manusia masih terus berevolusi, dan kata-kata baru diciptakan setiap hari saat kata-kata lama menghilang. Bahasa-bahasa ini disebut bahasa natural.</p>
+<p>Kita dapat mengatakan bahwa setiap bahasa (mesin atau natural) terdiri dari elemen-elemen berikut:
+    <ol>
+        <li>Alfabet: kumpulan simbol yang digunakan untuk membentuk kata-kata dalam suatu bahasa tertentu (misalnya alfabet Latin untuk bahasa Inggris, alfabet Kiril untuk bahasa Rusia, Kanji untuk bahasa Jepang, dan lain-lain).</li>
+        <li>Leksikon: (juga disebut kamus) kumpulan kata-kata yang ditawarkan oleh bahasa untuk penggunanya (misalnya kata "komputer" berasal dari kamus bahasa Inggris, sedangkan "cmoptrue" bukan dari bahasa inggris; kata "chat” ada di kamus bahasa Inggris dan Prancis, tetapi maknanya berbeda).</li>
+        <li>Sintaksis: kumpulan aturan (formal atau informal, tertulis atau terasa intuitif) yang digunakan untuk menentukan apakah rangkaian kata tertentu membentuk kalimat yang valid (misalnya "I am a python" adalah frasa yang benar secara sintaksis, sementara "I a pyhton" salah)</li>
+        <li>Semantik: kumpulan aturan yang menentukan apakah frase tertentu masuk akal (misalnya "Saya makan donat" masuk akal, tetapi "Donat memakan saya" tidak masuk akal)</li>
+    </ol>
+    IL sebenarnya  adalah alfabet dari bahasa mesin, IL ini adalah kumpulan simbol paling sederhana dan dasar yang dapat kita gunakan untuk memberikan perintah pada komputer dan merupakan bahasa ibu dari komputer. 
+    Sayangnya, bahasa ibu ini jauh berbeda dengan bahasa ibu manusia. Kita membutuhkan sesuatu yang lain, sebuah bahasa yang umum untuk komputer dan manusia, atau sebuah jembatan antara dua dunia yang berbeda.
+    Kita membutuhkan bahasa di mana manusia dapat menulis program mereka dan bahasa yang dapat digunakan komputer untuk mengeksekusi program, yang jauh lebih kompleks dari bahasa mesin tetapi jauh lebih sederhana dari bahasa alami.
+    Bahasa seperti itu sering disebut <strong>bahasa pemrograman tingkat tinggi</strong>.</p>
+    <p> Bahasa tingkat tinggi  setidaknya agak mirip dengan bahasa natural karena menggunakan simbol, kata, dan konvensi
+    yang dapat dibaca oleh manusia. Bahasa-bahasa ini memungkinkan manusia untuk memberikan  perintah ke komputer yang jauh lebih kompleks daripada yang ditawarkan oleh IL.
+    Program yang ditulis dalam bahasa pemrograman tingkat tinggi disebut <strong>kode sumber (source code)</strong>,berlawanan dengan kode mesin yang dieksekusi oleh komputer. Begitu pula, file yang berisi kode sumber disebut <strong>file sumber (source file)</stong>.</p>
+    
+                 
+
+                     <a href="{% url 'program' %}"> <button type="button" class="btn btn-secondary">Sebelumnya</button></a>
+                     <a href="{% url 'interpreter_compiler' %}"><button class="btn btn-primary">Selanjutnya</button></a>
+
+
+                 
+
+                </div>
+
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+{% endblock konten %}
+

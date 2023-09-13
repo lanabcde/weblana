@@ -1,0 +1,251 @@
+
+{% extends "baseMateri.html"%}
+
+{% load static %}
+
+{% block judul %}
+  <title>Interpreter dan Compiler</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock judul %}
+
+{% block konten %}
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <span>Program dan Pemrograman</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="{% url 'materi'%}">
+            <i class="bi bi-circle"></i><span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'program'%}">
+            <i class="bi bi-circle"></i><span>Pemorgraman</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'bahasa_pemrograman'%}">
+            <i class="bi bi-circle"></i><span>Bahasa Pemrograman</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'interpreter_compiler'%}" class="active">
+              <i class="bi bi-circle"></i><span>Compiler dan Interpreter</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'bahasa_python' %}">
+              <i class="bi bi-circle"></i><span>Bahasa Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'program_sederhana' %}">
+              <i class="bi bi-circle"></i><span>Program Sederhana dengan Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab1' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 1</span>
+            </a>
+          </li>
+        </ul>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+         <span>Tipe Data, variabel, Operator</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'beranda2' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'tipe_data'%}">
+              <i class="bi bi-circle"></i><span>Tipe Data</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'variabel'%}">
+              <i class="bi bi-circle"></i><span>Varaibel</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'operator'%}">
+              <i class="bi bi-circle"></i><span>Operator</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'kuis_bab2'%}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 2</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Forms Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Percabangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda3' %}">
+              <i class="bi bi-circle"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'percabangan' %}">
+              <i class="bi bi-circle"></i><span>Pengenalan Struktur Percabangan</span>
+            </a>
+          </li>
+        <li>
+          <a href="{% url 'percabangan_if'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_if_else'%}">
+            <i class="bi bi-circle"></i><span>Percabangan If...Else</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'percabangan_elif' %}">
+            <i class="bi bi-circle"></i><span>Percabangan Elif</span>
+          </a>
+        </li>
+        <li>
+            <a href="{% url 'kuis_bab3' %}">
+              <i class="bi bi-circle"></i><span>Kuis BAB 3</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Tables Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <span>Struktur Perulangan</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+            <a href="{% url 'beranda4' %}">
+              <i class="bi bi-circle"></i><span>Beranda </span>
+            </a>
+        </li>
+         <li>
+            <a href="{% url 'perulangan' %}">
+            <i class="bi bi-circle"></i><span>Pengenalan Struktur Perulangan</span>
+            </a>
+              </li>
+          <a href="{% url 'perulangan_while' %}">
+            <i class="bi bi-circle"></i><span>Perulangan While</span>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'perulangan_while' %}" >
+            <i class="bi bi-circle"></i><span>Perulangan For</span>
+          </a>
+        </li>
+        <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>Kuis BAB 4</span>
+            </a>
+          </li>
+      </ul>
+    </li><!-- End Charts Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+           <span>Fungsi</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="icons-bootstrap.html">
+            <i class="bi bi-circle"></i><span>Pengertian</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-remix.html">
+            <i class="bi bi-circle"></i><span>Fungsi Dengan Nilai Balik</span>
+          </a>
+        </li>
+        <li>
+          <a href="icons-boxicons.html">
+            <i class="bi bi-circle"></i><span>Fungsi Tanpa Nilai Balik</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Icons Nav -->   
+</aside><!-- End Sidebar-->
+
+
+  <main id="main" class="main">
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-20">
+          <div class="row">        
+
+            <!-- Recent Sales -->
+            <div class="col-25">
+              <div class="card recent-sales overflow-auto">              
+
+                <div class="card-body">
+                  <h3 class="card-title" align="center"></span>BABA I : Interpreter dan Compiler </h3>
+                  <h6>Tujuan Pembelajaran</h6>
+                  <ul>
+                    <li>Tujuan 1</li>
+                    <li>Tujuan 2 </li>
+                  </ul>
+                  <p>Pemrograman komputer adalah tindakan menyusun elemen-elemen bahasa pemrograman yang dipilih secara berurutan agar menghasilkan efek yang diinginkan. Efek tersebut dapat berbeda dalam setiap kasus tertentu - tergantung pada imajinasi, pengetahuan, dan pengalaman programmer.</p>
+                  <ol>
+                    <li>Secara alfabetis - program harus ditulis dalam aksara yang dapat dikenali, seperti Romawi, Kiril, dll.</li>
+                    <li>secara leksikal - setiap bahasa pemrograman memiliki kamusnya sendiri dan Anda perlu menguasainya; untungnya, itu jauh lebih sederhana dan lebih kecil dari kamus bahasa alami mana pun</li>
+                    <li>Secara sintaksis - setiap bahasa memiliki aturannya sendiri dan aturan tersebut harus dipatuhi</li>
+                    <li>Secara semantis - program harus masuk akal.</li>
+                  </ol>
+                  <p>Sayangnya, seorang programmer juga bisa membuat kesalahan dengan keempat hal  di atas. Setiap hal tersebut dapat menyebabkan program menjadi sepenuhnya tidak berguna.
+                    Anggaplah kita telah berhasil menulis sebuah program. Bagaimana kita meyakinkan komputer untuk menjalankannya? kita harus mengubah program menjadi bahasa mesin. Untungnya, terjemahan dapat dilakukan oleh komputer itu sendiri, membuat seluruh proses menjadi cepat dan efisien.
+                    Ada dua cara yang untuk mengubah program dari bahasa permograman tingkat tinggi menjadi bahasa mesin :</p>
+                
+                    <h6><strong> Compiling </strong></h6>
+                    <p>Source Code diterjemahkan sekali (namun, tindakan ini harus diulang setiap kali kita memodifikasi kode sumber) dengan mendapatkan file (misalnya, file .exe jika kode dimaksudkan untuk dijalankan di bawah MS Windows) yang berisi kode mesin; sekarang Anda dapat mendistribusikan file tersebut ke seluruh dunia; program yang melakukan terjemahan ini disebut<strong> compiler atau translator</strong></p>
+                    <h6><strong> Interpreting </strong></h6>
+                    <p>Kita  (atau pengguna kode apa pun) dapat menerjemahkan Source code setiap kali harus dijalankan; program yang melakukan transformasi semacam ini disebut <strong>interpreter</strong>, karena ia menginterpretasi kode setiap kali dimaksudkan untuk dieksekusi; ini juga berarti bahwa kita tidak dapat hanya mendistribusikan kode sumber apa adanya, karena pengguna akhir juga memerlukan interpreter untuk mengeksekusinya.
+
+                      Karena beberapa alasan yang sangat mendasar, bahasa pemrograman tingkat tinggi tertentu dirancang untuk termasuk ke dalam salah satu dari dua kategori ini.
+                      
+                      Hanya ada sedikit bahasa yang dapat diterjemahkan dan dikompilasi. Biasanya, bahasa pemrograman diproyeksikan dengan faktor ini dalam pikiran konstrukturnya - apakah itu akan dikompilasi atau diinterpretasikan?</p>
+                   
+                     <a href="{% url 'bahasa_pemrograman' %}"><button type="button" class="btn btn-secondary">Sebelumnya</button></a>
+                     <a href="{% url 'bahasa_python' %}"> <button class="btn btn-primary">Selanjutnya</button></a>
+
+
+                 
+
+                </div>
+
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        
+
+      </div>
+    </section>
+  </main><!-- End #main -->
+{% endblock konten %}
+
